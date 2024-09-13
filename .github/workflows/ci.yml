@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Validate code with UCI
-        uses: meltingcore/uci@v1
+        uses: meltingcore/uci@version-feature/development
