@@ -1,3 +1,3 @@
 locals {
-  bucket_name = "${var.bucket_prefix}-${uuid().split("-")[0]}"
+  bucket_name = "${var.bucket_prefix}-${split("-", uuid())[0]}"
 }
