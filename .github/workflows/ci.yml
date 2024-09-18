@@ -8,9 +8,17 @@ jobs:
     name: UCI Tests
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      packages: read
+      # To report GitHub Actions status checks
+      statuses: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
 #       - name: Validate code with UCI
 #         uses: meltingcore/uci@version-feature/development
