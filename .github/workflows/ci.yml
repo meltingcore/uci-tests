@@ -20,10 +20,10 @@ jobs:
         with:
           fetch-depth: 0
 
-#       - name: Validate code with UCI
-#         uses: meltingcore/uci@version-feature/development
+      - name: Validate code with UCI
+        uses: meltingcore/uci@version-feature/development
 
-      - name: Super-linter
-        uses: super-linter/super-linter/slim@v7.1.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       - name: Super-linter
+#         uses: super-linter/super-linter/slim@v7.1.0
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
