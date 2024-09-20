@@ -21,4 +21,4 @@ jobs:
           fetch-depth: 0
 
       - name: Validate code with UCI
-        uses: meltingcore/uci
+        uses: meltingcore/uci@main
